@@ -61,7 +61,15 @@ nav ul li {
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-content2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .breadcrumb {
@@ -99,29 +107,6 @@ h1 {
     color: #104e8b;
 }
 
-.cta-buttons {
-    margin: 20px 0;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 22px;
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #ff6347;
-    color: white;
-    text-align: center;
-}
-
-.btn-secondary {
-    background-color: #20b2aa;
-    color: white;
-}
-
 .features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -141,10 +126,10 @@ h1 {
 }
 
 .feature-item {
-    text-align: center;
+    text-align: start;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
 }
 
 .feature-icon {
@@ -165,7 +150,7 @@ h1 {
 
 .tab {
     display: inline-flex;
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
     flex-shrink: 0;
 }
@@ -246,64 +231,97 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    margin-top: 30px;
     margin-bottom: 30px;
     background-size: cover;
-    background-position: -50px center;
     background-repeat: no-repeat;
+    min-height: 150px;
+    background-color: #F4F6FF;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .content-image1 img {
         display: none;
     }
 
     .content-section1 {
-        background-image: url('./asserts/images/accelerate_img.jpg');
+        background-image: url('../asserts/images/accelerate_img.jpg');
         background-size: cover;
+        background-color: transparent;
     }
 }
 
 @media (max-width: 767px) {
     .content-section1 {
         background-image: none;
+        background-color: #F4F6FF;
     }
 
     .content-image1 img {
         display: block;
     }
 }
+
+
 
 .content-section3 {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-bottom: 30px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 300px;
+    background-color: #F4F6FF;
+    padding: 20px;
 }
 
-@media (min-width: 768px) {
+.content-section3-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-self: start;
+}
+
+@media (min-width: 1200px) {
     .content-image3 img {
         display: none;
     }
 
     .content-section3 {
-        background-image: url('./asserts/images/bg-how-does-office365-mailbox-work.jpg');
+        background-image: url('../asserts/images/bg-how-does-office365-mailbox-work.jpg');
     }
+
 }
 
 @media (max-width: 767px) {
     .content-section3 {
         background-image: none;
+        background-color: #F4F6FF;
     }
 
     .content-image3 img {
         display: block;
     }
+
 }
+
+
+.content-text-flex3 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .content-text-flex3 .side-space3 {
+        width: 75%;
+    }
+
+    .content-text-flex3 {
+        width: 25%;
+    }
+}
+
 
 .content-text {
     flex: 1;
@@ -344,7 +362,7 @@ h2 {
     width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .content-text-flex .side-space {
         width: 25%;
     }
@@ -446,6 +464,87 @@ footer {
     width: 50%;
 }
 
+
+.product-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('../asserts/images/product-icon-sprites.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.product-logo1 .product-icon {
+    background-position: 0px 0px;
+}
+
+.product-logo2 .product-icon {
+    background-position: 0px -35px;
+}
+
+.product-logo3 .product-icon {
+    background-position: 0px -70px;
+}
+
+.product-logo4 .product-icon {
+    background-position: 0px -105px;
+}
+
+.product-logo5 .product-icon {
+    background-position: 0px -140px;
+}
+
+.product-logo6 .product-icon {
+    background-position: 0px -175px;
+}
+
+.product-logo7 .product-icon {
+    background-position: 0px -210px;
+}
+
+.product-logo8 .product-icon {
+    background-position: 0px -245px;
+}
+
+
+
+.other-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('../asserts/images/otherlinks-sprite.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.other-logo1 .other-icon {
+    background-position: 0px 5px;
+}
+
+.other-logo2 .other-icon {
+    background-position: 0px -24px;
+}
+
+.other-logo3 .other-icon {
+    background-position: 0px -55px;
+}
+
+.other-logo4 .other-icon {
+    background-position: 0px -97px;
+}
+
+.other-logo5 .other-icon {
+    background-position: 3px -129px;
+}
+
+.other-logo6 .other-icon {
+    background-position: 3px -233px;
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .two-column {
         flex-direction: column;
@@ -503,5 +602,85 @@ footer {
         width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
+    }
+}
+
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack vertically by default */
+    gap: 20px; /* Space between buttons */
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 22px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+.btn-secondary {
+    background-color: #20b2aa;
+    color: white;
+}
+
+.buy-now-btn {
+    position: relative;
+    padding: 12px 55px 12px 15px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: start;
+    margin-right: 60px;
+    /* width: 80%; */
+}
+
+.buy-now-btn .discount {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 0 20px 20px 0;
+}
+
+.buy-now-btn:hover {
+    background-color: #005bb5;
+}
+
+.buy-now-btn .triangle {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    width: 0;
+    height: 0;
+    rotate: -90deg;
+    border-left: 10px solid transparent;  /* Adjust size */
+    border-right: 10px solid transparent; /* Adjust size */
+    border-bottom: 20px solid #ff4d4d;        /* Color of the triangle */
+}
+
+
+/* Media query for screens above 768px */
+@media (min-width: 768px) {
+    .cta-buttons {
+        flex-direction: row; /* Align buttons horizontally */
     }
 }
